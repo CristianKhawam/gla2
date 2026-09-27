@@ -285,7 +285,7 @@ header {
     text-decoration: none;
     font-size: 16px;
     border-radius: 50px;
-    padding: 20px 25px;
+    padding: 12px 25px;
 }
 
 footer {
@@ -300,34 +300,63 @@ footer {
 
 @media (max-width: 700px) {
 
+    .logo{
+        font-size: 4vw !important;
+    }
+
+    .nav-button{
+        font-size: 3vw !important;
+    }
+
     .nav-links a:not(.nav-button) {
         display: none;
     }
 
-    .hero {
+    .hero{
         flex-direction: column;
-        gap: 25px;
     }
-
-    .hero-left,
-    .hero-image {
+    .hero-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
     }
-
-    .hero-title {
-        font-size: 38px !important;
+    .hero-title, .services-title, .services-card-title, .contact-title{
+        font-size: 6vw !important;
+        margin: 10px 10px;
+    }
+    .hero-text, .services-description, .services-card-description{
+        margin: 0;
+        font-size: 3vw;
+    }
+    .hero-buttons {
+        margin: 10px 10px;
+    }
+    .hero-buttons a, .contact a{
+        font-size: 3vw;
     }
 
-    .hero-text {
-        font-size: 15px;
+    .hero-image {
+        width: 90%;
     }
 
-    .services-title {
-        font-size: 30px;
+    .services-description{
+        margin: 0px 20px 0px 20px;
     }
 
-    .services-card-title {
-        font-size: 20px;
+    .services-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services-icon{
+        margin-bottom: 0px;
+    }
+
+    .services-card-description{
+        text-align: center;
+        margin-bottom: 5px;
     }
 
     .quote{
@@ -335,13 +364,20 @@ footer {
     }
 
     .quote-text {
+        padding: 0px 10px;
+        font-size: 5vw;
+        
+    }
+    .quote-person {
         padding-left: 10px;
-        font-size: 20px;
+    }
+    .quote-person-circle{
+        font-size: 4vw;
+    }
+    .quote-city-circle{
+        font-size: 3vw;
     }
 
-    .contact-title {
-        font-size: 28px;
-    }
 
     .services-container {
         flex-direction: column;
@@ -350,5 +386,14 @@ footer {
     .quote {
         margin-left: 3%;
         margin-right: 3%;
+    }
+
+    .contact-description{
+        font-size: 3vw;
+        margin-bottom: 20px;
+    }
+
+    footer{
+        font-size: 3vw;
     }
 }
