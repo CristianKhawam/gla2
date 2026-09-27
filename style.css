@@ -309,13 +309,38 @@ footer {
         gap: 25px;
     }
 
-    .hero-text,
+    .hero-left,
     .hero-image {
         width: 100%;
     }
 
-    h1 {
+    .hero-title {
+        font-size: 38px !important;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .services-title {
         font-size: 30px;
+    }
+
+    .services-card-title {
+        font-size: 20px;
+    }
+
+    .quote{
+        padding: 0px 0px 15px 15px;
+    }
+
+    .quote-text {
+        padding-left: 10px;
+        font-size: 20px;
+    }
+
+    .contact-title {
+        font-size: 28px;
     }
 
     .services-container {
